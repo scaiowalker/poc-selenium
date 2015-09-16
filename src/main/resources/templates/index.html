@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Hello ROMA!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+    <link href="../static/css/core.css"
+          th:href="@{/css/core.css}"
+          rel="stylesheet" media="screen" />
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+</head>
+<body>
+
+<div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a id="header" href="#">Hello ROMA!</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="hero-unit">
+        <h1></h1>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p><a href="#" th:href="@{#}">roma</a></p>
+                    </td>
+                    <td>
+                        <p><code class="literal">@Nozes</code></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a href="#" th:href="@{#}">mordor</a></p>
+                    </td>
+                    <td>
+                        <p><code class="literal">@Nice</code></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a href="#" th:href="@{#}">gondor</a></p>
+                    </td>
+                    <td>
+                        <p><code class="literal">@NotNice</code></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div></div>
+    </footer>
+</div>
+</body>
+</html>
